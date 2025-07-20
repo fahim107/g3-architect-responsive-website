@@ -219,6 +219,27 @@ main>section {
    margin-top: 0;
     margin-bottom: 100px;
 }
+
+
+
+/* Sponsors related styles*/
+
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+
+}
+
+.sponsor-companies img{
+        filter: grayscale(100%);
+    }
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
@@ -231,7 +252,9 @@ main>section {
 
     }
 
-    .team-image-container {
+    .team-image-container,
+     .facts-container,
+     .sponsor-companies {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -241,5 +264,10 @@ main>section {
     #experience-badge{
         margin-top: 20px;
         margin-left: 20px;
+    }
+    .facts-container,
+    .sponsor-companies{
+        justify-items: center;
+        gap: 24px;
     }
 }
